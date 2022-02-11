@@ -1,57 +1,270 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
     <head>
+        <!-- Required meta tags -->
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width">
-        <title>Go Awesome!</title>
-        <!-- Bootstrap -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Bootstrap CSS -->
         <link
-            href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
             rel="stylesheet"
-            integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+            integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
             crossorigin="anonymous">
-        <link href="style.css" rel="stylesheet" type="text/css" />
+
+        <link
+            href="./style.css"
+            rel="stylesheet"
+            crossorigin="anonymous">
+
+        <title>Henrique L. Mazzuchetti</title>
     </head>
     <body>
+        <div class="container text-center my-5">
+            <img class="rounded profile-picture shadow"
+                src="./image/profile-picture.jpg" alt="">
+            <h1>Henrique L. Mazzuchetti</h1>
+            <p class="lead">
+                A Developer with the goal to aim High, think outside the box and
+                surprise you! In love with React and Front end development.
+            </p>
+        </div>
 
-        <nav class="navbar navbar-expand-lg navbar-light bg-light shadow">
-            <div class="container-fluid">
-                <a class="navbar-brand fw-bold" href="#">Henrique Mazzuchetti</a>
-                <button class="navbar-toggler" type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#navbarNavAltMarkup"
-                    aria-controls="navbarNavAltMarkup" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item btn btn-sm btn-outline-light
-                            rounded-pill py-0 px-1 border-0">
-                            <a class="nav-link" aria-current="page" href="#">Home</a>
-                        </li>
-                        <li class="nav-item btn btn-sm btn-outline-light
-                            rounded-pill py-0 px-1 border-0">
-                            <a class="nav-link" aria-current="page" href="#">About
-                                me</a>
-                        </li>
-                        <li class="nav-item btn btn-sm btn-outline-light
-                            rounded-pill py-0 px-1 border-0">
-                            <a class="nav-link" aria-current="page" href="#">Projects</a>
-                        </li>
-                        <li class="nav-item btn btn-sm btn-outline-light
-                            rounded-pill py-0 px-1 border-0">
-                            <a class="nav-link" aria-current="page" href="#">Skills</a>
-                        </li>
-                    </ul>
+        <div class="container">
+            <nav>
+                <ul class="nav nav-pills justify-content-center">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Home</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="#">Portfolio</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="#">About me</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+
+                </ul>
+            </nav>
+        </div>
+
+        <div class="container mt-5">
+
+            <div class="row no-gutters justify-content-evenly">
+
+                <h3 class="mb-3">Projects</h3>
+
+                <div class="card col-12 col-md-5 my-3">
+                    <div class="card-body">
+                        <div class="mx-3">
+                            <h4 class="mb-3">AirBnb Press Clone</h4>
+                            <div><strong class="">February-2022</strong></div>
+                            <p class="lead">A clone of the press web page of
+                                AirBnb using
+                                Bootstrap 4, HTML and CSS.</p>
+                        </div>
+                        <ul class="list-group list-group-flush mt-2">
+                            <li class="list-group-item">
+                                Focusing on responsiveness using Bootstrap
+                                4.
+                            </li>
+                            <li class="list-group-item">
+                                Complementary styling with CSS.
+                            </li>
+                            <li class="list-group-item">
+                                Structured with HTML.
+                            </li>
+                        </ul>
+                        <div class="img-container">
+                            <img class="rounded img-fluid"
+                                src="https://via.placeholder.com/600x400.png/09f/fff"
+                                alt="">
+                        </div>
+                        <button class="btn btn-primary mt-2">View live version</button>
+                    </div>
+                </div>
+
+                <div class="card col-12 col-md-5 my-3">
+                    <div class="card-body">
+                        <div class="mx-3">
+                            <h4 class="mb-3">AirBnb Home page Clone</h4>
+                            <div><strong class="">January-2022</strong></div>
+                            <p class="lead">A clone of the Home web page of
+                                AirBnb using
+                                Bootstrap 4, HTML and CSS.</p>
+                        </div>
+                        <ul class="list-group list-group-flush mt-2">
+                            <li class="list-group-item">
+                                Focusing on responsiveness using Bootstrap
+                                4.
+                            </li>
+                            <li class="list-group-item">
+                                Complementary styling with CSS.
+                            </li>
+                            <li class="list-group-item">
+                                Structured with HTML.
+                            </li>
+                        </ul>
+                        <div class="img-container">
+                            <img class="rounded img-fluid"
+                                src="https://via.placeholder.com/600x400.png/09f/fff"
+                                alt="">
+                        </div>
+                        <button class="btn btn-primary mt-2">View live version</button>
+                    </div>
+                </div>
+
+                <div class="card col-12 col-md-5 my-3">
+                    <div class="card-body">
+                        <div class="mx-3">
+                            <h4 class="mb-3">AirBnb Press Clone</h4>
+                            <div><strong class="">February-2022</strong></div>
+                            <p class="lead">A clone of the press web page of
+                                AirBnb using
+                                Bootstrap 5, HTML and CSS.</p>
+                        </div>
+                        <ul class="list-group list-group-flush mt-2">
+                            <li class="list-group-item">
+                                Focusing on responsiveness using Bootstrap
+                                5.
+                            </li>
+                            <li class="list-group-item">
+                                Complementary styling with CSS.
+                            </li>
+                            <li class="list-group-item">
+                                Structured with HTML.
+                            </li>
+                        </ul>
+                        <div class="img-container">
+                            <img class="rounded img-fluid"
+                                src="https://via.placeholder.com/600x400.png/09f/fff"
+                                alt="">
+                        </div>
+                        <button class="btn btn-primary mt-2">View live version</button>
+                    </div>
+
+                </div>
+
+                <div class="card col-12 col-md-5 my-3">
+                    <div class="card-body">
+                        <div class="mx-3">
+                            <h4 class="mb-3">AirBnb Press Clone</h4>
+                            <div><strong class="">February-2022</strong></div>
+                            <p class="lead">A clone of the press web page of
+                                AirBnb using
+                                Bootstrap 5, HTML and CSS.</p>
+                        </div>
+                        <ul class="list-group list-group-flush mt-2">
+                            <li class="list-group-item">
+                                Focusing on responsiveness using Bootstrap
+                                5.
+                            </li>
+                            <li class="list-group-item">
+                                Complementary styling with CSS.
+                            </li>
+                            <li class="list-group-item">
+                                Structured with HTML.
+                            </li>
+                        </ul>
+                        <div class="img-container">
+                            <img class="rounded img-fluid"
+                                src="https://via.placeholder.com/600x400.png/09f/fff"
+                                alt="">
+                        </div>
+                        <button class="btn btn-primary mt-2">View live version</button>
+                    </div>
+
+                </div>
+                <!-- end of cards - Place new cards here-->
+            </div>
+            </div>
+
+            <hr/>
+            <div class="container">
+                <div class="row justify-content-evenly">
+                    <h3 class="mb-3">
+                        Skills
+                    </h3>
+                    <div class="col-12 col-md-5 mx-1 card my-2">
+                        <div class="card-body">
+                            <div class="mx-3">
+                                <h4>Front End</h4>
+                                <ul>
+                                    <li>
+                                        HTML
+                                    </li>
+                                    <li>
+                                        CSS
+                                    </li>
+                                    <li>
+                                        JS
+                                    </li>
+                                    <li>
+                                        React
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-5 mx-1 card my-2">
+                        <div class="card-body">
+                            <div class="mx-3">
+
+                                <h4>Back End</h4>
+                                <ul>
+                                    <li>
+                                        MySql
+                                    </li>
+                                    <li>
+                                        API's
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </nav>
+            <hr>
+            <div class="container mb-2">
+                <div class="row">
+                    <div class="card">
+                        <div class="card-body">
+                            <h1>Contact me!</h1>
+                            <p class="lead">If you have any questions about
+                                my projects or me, or would like to get in
+                                touch for any reason, please contact me,
+                                I'll be happy to answer at any time!</p>
+                            <button class="btn btn-outline-primary">henrique.mazzu@gmail.com</button>
+                        </div>
+                    </div>
 
-        <!-- JavaScript Bundle with Popper -->
-        <script
-            src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
-            crossorigin="anonymous"></script>
-    </body>
-</html>
+
+                </div>
+            </div>
+                 
+                    
+
+                
+
+
+
+
+
+
+
+
+                <script
+                    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+                    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+                    crossorigin="anonymous"></script>
+            </body>
+            <footer>
+                <nav class="navbar navbar-light bg-dark">
+                    <div class="container-fluid">
+                      <span class="navbar-brand mb-0 ms-auto me-auto h1 text-white">Henrique Luís Mazzuchetti - Web Developer</span>
+                    </div>
+                  </nav>
+            </footer>
+        </html>
