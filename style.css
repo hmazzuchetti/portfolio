@@ -2,4 +2,11 @@
     /* height: 25%; */
     width: 20%;
     object-fit: cover;
+    border-radius:120px;
+    object-fit: cover;
 }
+
+.social {
+    font-size: 40px;
+    height: 40px;
+  }

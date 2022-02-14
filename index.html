@@ -16,13 +16,24 @@
             rel="stylesheet"
             crossorigin="anonymous">
 
+        <!-- Fontawesome -->
+        <link rel="stylesheet"
+            href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+            integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+            crossorigin="anonymous">
+
         <title>Henrique L. Mazzuchetti</title>
     </head>
     <body>
         <div class="container text-center my-5">
-            <img class="rounded profile-picture shadow"
+            <img class="profile-picture shadow"
                 src="./image/profile-picture.jpg" alt="">
             <h1>Henrique L. Mazzuchetti</h1>
+            <h5 class="mb-3 social">
+                <a href="#"><i class="text-secondary mr-3 fab fa-facebook-f"></i></a>
+                <a href="#"><i class="text-secondary mr-3 fab fa-twitter"></i></a>
+                <a href="#"><i class="text-secondary fab fa-instagram"></i></a>
+            </h5>
             <p class="lead">
                 A Developer with the goal to aim High, think outside the box and
                 surprise you! In love with React and Front end development.
@@ -36,7 +47,10 @@
                         <a class="nav-link active" href="#">Home</a>
                     </li>
                     <li>
-                        <a class="nav-link" href="#">Portfolio</a>
+                        <a class="nav-link" href="#">Projects</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="#">Skills</a>
                     </li>
                     <li>
                         <a class="nav-link" href="#">About me</a>
@@ -53,7 +67,109 @@
 
             <div class="row no-gutters justify-content-evenly">
 
+                <h3 class="mb-3">About me</h3>
+                <div class="row">
+                    <div class="col-lg-4 col-12">
+                        <img src="./image/aboutme_picture.png" alt=""
+                            class="img img-fluid aboutme_picture rounded">
+                    </div>
+                    <div class="col-lg-8 col-12">
+                        <h1>UI/UX Designer & Web Developer.</h1>
+                        <p class="lead">Absolutely in love with React and Front
+                            end development, focusing on
+                            providing the user a nice and fluid experience.
+                            Always seeking to learn more and more, opened to new
+                            projects and network. I love getting to know new
+                            people and their history.
+                        </p>
+                        <ul>
+                            <li class="my-md-4 my-2">
+                                <strong>Age: </strong><span>24 Years Old.</span>
+                            </li>
+                            <li class="my-md-4 my-2">
+                                <strong>City: </strong><span>Curitiba, Brasil.</span>
+                            </li>
+                            <li class="my-md-4 my-2">
+                                <strong>Phone: </strong><span>+55 41992731106</span>
+                            </li>
+                            <li class="my-md-4 my-2">
+                                <strong>Email: </strong><span>henrique.mazzu@gmail.com</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="row no-gutters justify-content-evenly">
+
                 <h3 class="mb-3">Projects</h3>
+
+                <div class="card col-12 col-md-5 my-3">
+                    <div class="card-body">
+                        <div class="mx-3">
+                            <h4 class="mb-3">Airbnb Online Exp. Clone</h4>
+                            <div><strong class="">February-2022</strong></div>
+                            <p class="lead">A clone of the Online Experience web
+                                page of
+                                AirBnb using
+                                Bootstrap 5, HTML and CSS.</p>
+                        </div>
+                        <ul class="list-group list-group-flush mt-2">
+                            <li class="list-group-item">
+                                Focusing on responsiveness using Bootstrap
+                                5.
+                            </li>
+                            <li class="list-group-item">
+                                Complementary styling with CSS.
+                            </li>
+                            <li class="list-group-item">
+                                Structured with HTML.
+                            </li>
+                        </ul>
+                        <div class="img-container">
+                            <img class="rounded img-fluid"
+                                src="https://via.placeholder.com/600x400.png/09f/fff"
+                                alt="">
+                        </div>
+                        <button class="btn btn-primary mt-2">
+                            <a href="#" class="text-white"> View live version</a>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="card col-12 col-md-5 my-3">
+                    <div class="card-body">
+                        <div class="mx-3">
+                            <h4 class="mb-3">AirBnb Press Clone</h4>
+                            <div><strong class="">February-2022</strong></div>
+                            <p class="lead">A clone of the press web page of
+                                AirBnb using
+                                Bootstrap 5, HTML and CSS.</p>
+                        </div>
+                        <ul class="list-group list-group-flush mt-2">
+                            <li class="list-group-item">
+                                Focusing on responsiveness using Bootstrap
+                                5.
+                            </li>
+                            <li class="list-group-item">
+                                Complementary styling with CSS.
+                            </li>
+                            <li class="list-group-item">
+                                Structured with HTML.
+                            </li>
+                        </ul>
+                        <div class="img-container">
+                            <img class="rounded img-fluid"
+                                src="https://via.placeholder.com/600x400.png/09f/fff"
+                                alt="">
+                        </div>
+                        <button class="btn btn-primary mt-2">
+                            <a href="#" class="text-white"> View live version</a>
+                        </button>
+                    </div>
+                </div>
 
                 <div class="card col-12 col-md-5 my-3">
                     <div class="card-body">
@@ -81,7 +197,9 @@
                                 src="https://via.placeholder.com/600x400.png/09f/fff"
                                 alt="">
                         </div>
-                        <button class="btn btn-primary mt-2">View live version</button>
+                        <button class="btn btn-primary mt-2">
+                            <a href="#" class="text-white"> View live version</a>
+                        </button>
                     </div>
                 </div>
 
@@ -111,7 +229,9 @@
                                 src="https://via.placeholder.com/600x400.png/09f/fff"
                                 alt="">
                         </div>
-                        <button class="btn btn-primary mt-2">View live version</button>
+                        <button class="btn btn-primary mt-2">
+                            <a href="#" class="text-white"> View live version</a>
+                        </button>
                     </div>
                 </div>
 
@@ -141,9 +261,10 @@
                                 src="https://via.placeholder.com/600x400.png/09f/fff"
                                 alt="">
                         </div>
-                        <button class="btn btn-primary mt-2">View live version</button>
+                        <button class="btn btn-primary mt-2">
+                            <a href="#" class="text-white"> View live version</a>
+                        </button>
                     </div>
-
                 </div>
 
                 <div class="card col-12 col-md-5 my-3">
@@ -172,15 +293,17 @@
                                 src="https://via.placeholder.com/600x400.png/09f/fff"
                                 alt="">
                         </div>
-                        <button class="btn btn-primary mt-2">View live version</button>
+                        <button class="btn btn-primary mt-2">
+                            <a href="#" class="text-white"> View live version</a>
+                        </button>
                     </div>
 
                 </div>
                 <!-- end of cards - Place new cards here-->
             </div>
-            </div>
+        </div>
 
-            <hr/>
+        <hr/>
             <div class="container">
                 <div class="row justify-content-evenly">
                     <h3 class="mb-3">
@@ -231,9 +354,9 @@
                 <div class="row">
                     <div class="card">
                         <div class="card-body">
-                            <h1>Contact me!</h1>
+                            <h1>Get in touch!</h1>
                             <p class="lead">If you have any questions about
-                                my projects or me, or would like to get in
+                                my projects or about me, or would like to get in
                                 touch for any reason, please contact me,
                                 I'll be happy to answer at any time!</p>
                             <button class="btn btn-outline-primary">henrique.mazzu@gmail.com</button>
@@ -243,11 +366,9 @@
 
                 </div>
             </div>
-                 
-                    
 
-                
 
+        </body>
 
 
 
@@ -255,16 +376,20 @@
 
 
 
-                <script
-                    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-                    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-                    crossorigin="anonymous"></script>
-            </body>
-            <footer>
-                <nav class="navbar navbar-light bg-dark">
-                    <div class="container-fluid">
-                      <span class="navbar-brand mb-0 ms-auto me-auto h1 text-white">Henrique Luís Mazzuchetti - Web Developer</span>
-                    </div>
-                  </nav>
-            </footer>
-        </html>
+
+
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"></script>
+    </body>
+    <footer>
+        <nav class="navbar navbar-light bg-dark">
+            <div class="container-fluid">
+                <span class="navbar-brand mb-0 ms-auto me-auto h1 text-white">Henrique
+                    Luís Mazzuchetti - Web Developer</span>
+            </div>
+        </nav>
+    </footer>
+</html>
