@@ -1,27 +1,73 @@
-.profile-picture{
+.profile-picture {
     /* height: 25%; */
     width: 20%;
     object-fit: cover;
-    border-radius:120px;
+    border-radius: 120px;
     object-fit: cover;
 }
 
 .social {
     font-size: 40px;
     height: 40px;
-  }
+}
 
-.card-img{
+.card-img {
     border: 1px solid black;
 }
 
-a{
+a {
     text-decoration: none;
 }
 
-.icons{
+.icons {
     display: flex;
     justify-content: center;
     margin: 1.5rem 0 1.5rem 0;
 
- }
+}
+
+i {
+    transition: ease-in-out .8s;
+}
+
+i:hover {
+    transform: scale(1.2);
+}
+
+@keyframes galaxySpinning {
+
+    0% {
+        transform: scale(1) rotateZ(0deg);
+    }
+
+    50% {
+        transform: scale(1.2) rotateZ(20deg);
+    }
+
+    100% {
+        transform: scale(1) rotateZ(0deg);
+    }
+}
+
+.galaxyButton {
+    display: flex;
+    position: fixed;
+    top: 15px;
+    right: 15px;
+    width: 150px;
+    animation: galaxySpinning 3s infinite;
+    transition: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    cursor: pointer;
+
+}
+
+.galaxyIcon {
+    width: 100%;
+    top: 0;
+    right: 0;
+
+}
+
+body{
+    background-color: aquamarine;
+}

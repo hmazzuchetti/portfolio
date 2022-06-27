@@ -31,8 +31,7 @@
                     class="text-secondary fab fa-instagram"></i></a>
             <a href="https://www.linkedin.com/in/henrique-luis-mazzuchetti-ba730a191/" target="_blank"><i
                     class="text-secondary fab fa-linkedin"></i></a>
-            <a href="https://github.com/hmazzuchetti" target="_blank"><i
-                    class="text-secondary fab fa-github"></i></a>
+            <a href="https://github.com/hmazzuchetti" target="_blank"><i class="text-secondary fab fa-github"></i></a>
         </h5>
         <p class="lead">
             A Developer with the goal to aim High, think outside the box and
@@ -86,7 +85,12 @@
                         <div class="col-lg-6 col-12 mb-0">
                             <ul>
                                 <li class="my-2">
-                                    <strong>Age: </strong><span>24 Years Old.</span>
+                                    <strong>Age: </strong><span id="myDynamicAge">24 Years Old.</span>
+                                    <script>
+                                        var today = new Date();
+                                        var myAge = today.getFullYear()-1997;
+                                        document.getElementById("myDynamicAge").innerHTML = (myAge)+ " Years Old.";
+                                    </script>
                                 </li>
 
                                 <li class="my-2">
@@ -442,7 +446,14 @@
     </div>
 
 
+    <div class="container-lg galaxyButton">
+            <img class="galaxyIcon" src="image\galaxy.png" alt="Galaxy">
+    </div>
+
+
 </body>
+
+
 
 
 
