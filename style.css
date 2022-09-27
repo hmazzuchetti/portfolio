@@ -6,6 +6,13 @@
     object-fit: cover;
 }
 
+.lead{
+    font-size: .8rem;
+    font-weight: 400;
+    line-height: 1.5;
+    margin-bottom: 1.5rem;
+}
+
 .social {
     font-size: 40px;
     height: 40px;
