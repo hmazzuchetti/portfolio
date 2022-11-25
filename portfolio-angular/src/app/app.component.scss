@@ -1,0 +1,89 @@
+.profile-picture {
+    width: 20%;
+    object-fit: cover;
+    border-radius: 120px;
+    object-fit: cover;
+}
+
+.lead{
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    margin-bottom: 1.5rem;
+}
+
+.component-details{
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 1.2;
+    /* margin-bottom: 1.5rem; */
+}
+
+.social {
+    font-size: 40px;
+    height: 40px;
+}
+
+.card-img {
+    border: 1px solid black;
+}
+
+a {
+    text-decoration: none;
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+    margin: 1.5rem 0 1.5rem 0;
+
+}
+
+i {
+    transition: ease-in-out .8s;
+}
+
+i:hover {
+    transform: scale(1.2);
+}
+
+@keyframes galaxySpinning {
+
+    0% {
+        transform: scale(1) rotateZ(0deg);
+    }
+
+    50% {
+        transform: scale(1.2) rotateZ(20deg);
+    }
+
+    100% {
+        transform: scale(1) rotateZ(0deg);
+    }
+}
+
+.developed-component{
+    width: 100%;
+    border-radius: 20px;
+    border: 1px solid rgba(0,0,0,0.5);
+    box-shadow: 0 1px 1px 2px;
+}
+
+.galaxyButton {
+    display: flex;
+    position: fixed;
+    top: 15px;
+    right: 15px;
+    width: 150px;
+    animation: galaxySpinning 3s infinite;
+    transition: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    cursor: pointer;
+
+}
+
+.galaxyIcon {
+    width: 100%;
+    top: 0;
+    right: 0;
+
+}
