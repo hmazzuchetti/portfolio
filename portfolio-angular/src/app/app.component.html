@@ -1,15 +1,12 @@
-<div class="container text-center my-5">
+<div class="container text-center my-3">
   <img class="profile-picture shadow" src="../assets/img/profilepic.png" alt="">
   <h1>Henrique L. Mazzuchetti</h1>
   <h5 class="mb-3 social">
-    <a href="https://www.facebook.com/Mazzuchetti" target="_blank"><i
-        class="text-secondary mr-3 fab fa-facebook-f"></i></a>
-    <a href="https://twitter.com/Mazzuchetti_" target="_blank"><i class="text-secondary mr-3 fab fa-twitter"></i></a>
-    <a href="https://www.instagram.com/hmazzuchetti/" target="_blank"><i
-        class="text-secondary fab fa-instagram"></i></a>
-    <a href="https://www.linkedin.com/in/henrique-luis-mazzuchetti-ba730a191/" target="_blank"><i
-        class="text-secondary fab fa-linkedin"></i></a>
-    <a href="https://github.com/hmazzuchetti" target="_blank"><i class="text-secondary fab fa-github"></i></a>
+    <a href="https://www.facebook.com/Mazzuchetti" target="_blank">Facebook</a>
+    <a href="https://twitter.com/Mazzuchetti_" target="_blank">Twitter</a>
+    <a href="https://www.instagram.com/hmazzuchetti/" target="_blank">Instagram</a>
+    <a href="https://www.linkedin.com/in/henrique-luis-mazzuchetti-ba730a191/" target="_blank">LinkedIn</a>
+    <a href="https://github.com/hmazzuchetti" target="_blank">GitHub</a>
   </h5>
   <p class="lead">
     A Developer with the goal to aim High, think outside the box and
@@ -100,213 +97,34 @@
   <hr>
 
   <div class="row no-gutters justify-content-evenly" id="projects">
-
     <h3 class="mb-3  text-info">Projects</h3>
-
-    <div class="card col-12 col-lg-5 my-3">
+    <div class="card projects-card col-12 col-md-4 col-lg-3 my-3 mx-3" *ngFor="let project of projectList">
       <div class="card-body">
-        <div class="mx-3">
-          <h4 class="mb-5">Airbnb Online Exp. Clone</h4>
-          <div class="mb-2"><strong>February-2022</strong></div>
-          <p class="lead">A clone of the Online Experience web
-            page of
-            AirBnb using
-            Bootstrap 5, HTML and CSS.</p>
+        <div class="mx-1">
+          <h4 class="mb-1">{{project.title}}</h4>
+          <div class="mb-1">
+            <strong>{{project.date}}</strong>
+          </div>
         </div>
-        <ul class="list-group list-group-flush mt-2">
-          <li class="list-group-item">
-            Focusing on responsiveness using Bootstrap
-            5.
-          </li>
-          <li class="list-group-item">
-            Complementary styling with CSS.
-          </li>
-          <li class="list-group-item">
-            Structured with HTML.
+        <div class="lead-box">
+          <p class="lead">{{project.description}}</p>
+        </div>
+
+        <hr>
+        <ul class="list-group-flush mt-1">
+          <li class="" *ngFor="let aspect of project.aspectsList">
+            {{aspect}}
           </li>
         </ul>
-        <hr>
         <div class="img-container">
-          <img class="rounded img-fluid card-img my-5 border border-primary" src="../assets/img/airbnb_exp_clone.png"
-            alt="">
+          <img class="rounded img-fluid card-img my-3 border border-primary" [src]="project.bannerImg" alt="">
         </div>
-        <button class="btn btn-primary mt-2">
-          <a href="https://sad-jackson-072188.netlify.app/" target="_blank" class="text-white"> View live
+        <button class="btn btn-primary">
+          <a [href]="project.liveVersionLink" target="_blank" class="text-white"> View live
             version</a>
         </button>
       </div>
     </div>
-
-    <div class="card col-12 col-lg-5 my-3">
-      <div class="card-body">
-        <div class="mx-3">
-          <h4 class="mb-5">Apple Clone</h4>
-          <div class="mb-2"><strong>December-2021</strong></div>
-          <p class="lead">A clone of the Apple website using HTML and CSS. Basic concepts like unordered
-            list and flex box.</p>
-        </div>
-        <ul class="list-group list-group-flush mt-2">
-          <li class="list-group-item">
-            Focusing on applying basic concepts of HTML and CSS.
-          </li>
-          <li class="list-group-item">
-            Complementary styling with CSS.
-          </li>
-          <li class="list-group-item">
-            Structured with HTML.
-          </li>
-        </ul>
-        <hr>
-        <div class="img-container">
-          <img class="rounded img-fluid card-img my-5 border border-primary" src="../assets/img/apple_clojne.png"
-            alt="">
-        </div>
-        <button class="btn btn-primary mt-2">
-          <a href="https://hopeful-yonath-a6af52.netlify.app/" target="_blank" class="text-white"> View
-            live
-            version</a>
-        </button>
-      </div>
-    </div>
-
-    <div class="card col-12 col-lg-5 my-3">
-      <div class="card-body">
-        <div class="mx-3">
-          <h4 class="mb-5">AirBnb Press Clone</h4>
-          <div class="mb-2"><strong>February-2022</strong></div>
-          <p class="lead">A clone of the Press web
-            page of
-            AirBnb using
-            Bootstrap 4, HTML and CSS.</p>
-        </div>
-        <ul class="list-group list-group-flush mt-2">
-          <li class="list-group-item">
-            Focusing on responsiveness using Bootstrap
-            4.
-          </li>
-          <li class="list-group-item">
-            Complementary styling with CSS.
-          </li>
-          <li class="list-group-item">
-            Structured with HTML.
-          </li>
-        </ul>
-        <hr>
-        <div class="img-container">
-          <img class="rounded img-fluid card-img my-5 border border-primary" src="../assets/img/airbnb_press_clone.png"
-            alt="">
-        </div>
-        <button class="btn btn-primary mt-2">
-          <a href="https://brave-kowalevski-d81e58.netlify.app/" target="_blank" class="text-white"> View
-            live version</a>
-        </button>
-      </div>
-    </div>
-
-    <div class="card col-12 col-lg-5 my-3">
-      <div class="card-body">
-        <div class="mx-3">
-          <h4 class="mb-5">AirBnb Home Clone</h4>
-          <div class="mb-2"><strong>February-2022</strong></div>
-          <p class="lead">A clone of the Home web
-            page of
-            AirBnb using
-            Bootstrap 4, HTML and CSS.</p>
-        </div>
-        <ul class="list-group list-group-flush mt-2">
-          <li class="list-group-item">
-            Focusing on responsiveness using Bootstrap
-            4.
-          </li>
-          <li class="list-group-item">
-            Complementary styling with CSS.
-          </li>
-          <li class="list-group-item">
-            Structured with HTML.
-          </li>
-        </ul>
-        <hr>
-        <div class="img-container">
-          <img class="rounded img-fluid card-img my-5 border border-primary" src="../assets/img/airbnb_home_clone.png"
-            alt="">
-        </div>
-        <button class="btn btn-primary mt-2">
-          <a href="https://optimistic-fermat-7011c9.netlify.app/" target="_blank" class="text-white"> View
-            live version</a>
-        </button>
-      </div>
-    </div>
-
-    <div class="card col-12 col-lg-5 my-3">
-      <div class="card-body">
-        <div class="mx-3">
-          <h4 class="mb-5">Newsweek Clone</h4>
-          <div class="mb-2"><strong>December-2021</strong></div>
-          <p class="lead">A clone of the Home web
-            page of
-            Newsweek using
-            Bootstrap 3.6, HTML and CSS.</p>
-        </div>
-        <ul class="list-group list-group-flush mt-2">
-          <li class="list-group-item">
-            Focusing on responsiveness using Bootstrap
-            3.6.
-          </li>
-          <li class="list-group-item">
-            Complementary styling with CSS.
-          </li>
-          <li class="list-group-item">
-            Structured with HTML.
-          </li>
-        </ul>
-        <hr>
-        <div class="img-container">
-          <img class="rounded img-fluid card-img my-5 border border-primary" src="../assets/img/newsweek_clone.png"
-            alt="">
-        </div>
-        <button class="btn btn-primary mt-2">
-          <a href="https://tender-haibt-f3565e.netlify.app/" target="_blank" class="text-white"> View live
-            version</a>
-        </button>
-      </div>
-    </div>
-
-    <div class="card col-12 col-lg-5 my-3">
-      <div class="card-body">
-        <div class="mx-3">
-          <h4 class="mb-3">Netflix Clone</h4>
-          <div class="mb-2"><strong>October-2021</strong></div>
-          <p class="lead">Netflix home clone, using React.</p>
-        </div>
-        <ul class="list-group list-group-flush mt-1">
-          <li class="list-group-item">
-            Website content fed by an API brought by the Axios library.
-          </li>
-          <li class="list-group-item">
-            Component based.
-          </li>
-          <li class="list-group-item">
-            Complementary styling with CSS.
-          </li>
-          <li class="list-group-item">
-            Structured with HTML.
-          </li>
-          <li class="list-group-item">
-            Deployed with Firebase.
-          </li>
-        </ul>
-        <hr>
-        <div class="img-container">
-          <img class="rounded img-fluid card-img my-4 border border-primary" src="../assets/img/netflix_clone.png"
-            alt="">
-        </div>
-        <button class="btn btn-primary mt-2">
-          <a href="https://netflix-clone-f415f.web.app/" target="_blank" class="text-white"> View live
-            version</a>
-        </button>
-      </div>
-    </div>
-    <!-- end of cards - Place new cards here-->
   </div>
 </div>
 
@@ -345,13 +163,13 @@
           components where mostly CRUD formularies. The components where developed using Angular and
           the UI/UX was planned using Figma. The formulary had an interesting logic, it was step driven,
           which means that the user was unable make a mistake and having a negative experience.</p>
-        
-          <p class="component-details">Besides creating formularies, I had to create some more
+
+        <p class="component-details">Besides creating formularies, I had to create some more
           complex components that used the most of the Angular Framework, an example is one that
           read files from the backend displaying surtain icon depending on the file type and also, the user
           could drag'n drop files to store them at the backend.</p>
-        
-          <p class="component-details">I had 1 or 2 component each Sprint to develop, focusing on good
+
+        <p class="component-details">I had 1 or 2 component each Sprint to develop, focusing on good
           documentation practice, beeing constantly supervised by senior developers, learning more
           each day.</p>
       </div>

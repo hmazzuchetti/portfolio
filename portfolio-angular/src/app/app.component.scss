@@ -3,20 +3,21 @@
     object-fit: cover;
     border-radius: 120px;
     object-fit: cover;
+    transition: 0.5s ease-in-out;
 }
 
-.lead{
-    font-size: 1rem;
-    font-weight: 400;
-    line-height: 1.5;
-    margin-bottom: 1.5rem;
+.profile-picture:hover{
+    transform: rotate3d(0, 10, 1, 15deg);
 }
 
-.component-details{
+
+
+
+
+.component-details {
     font-size: 1.2rem;
     font-weight: 400;
     line-height: 1.2;
-    /* margin-bottom: 1.5rem; */
 }
 
 .social {
@@ -28,9 +29,7 @@
     border: 1px solid black;
 }
 
-a {
-    text-decoration: none;
-}
+
 
 .icons {
     display: flex;
@@ -39,33 +38,24 @@ a {
 
 }
 
-i {
+a {
+    text-decoration: none;
+    font-size: small;
     transition: ease-in-out .8s;
 }
 
-i:hover {
-    transform: scale(1.2);
+h5>a{
+    margin: 1rem;
 }
 
-@keyframes galaxySpinning {
-
-    0% {
-        transform: scale(1) rotateZ(0deg);
-    }
-
-    50% {
-        transform: scale(1.2) rotateZ(20deg);
-    }
-
-    100% {
-        transform: scale(1) rotateZ(0deg);
-    }
+h5>a:hover {
+    transform: scale(1.3);
 }
 
-.developed-component{
+.developed-component {
     width: 100%;
     border-radius: 20px;
-    border: 1px solid rgba(0,0,0,0.5);
+    border: 1px solid rgba(0, 0, 0, 0.5);
     box-shadow: 0 1px 1px 2px;
 }
 
@@ -85,5 +75,45 @@ i:hover {
     width: 100%;
     top: 0;
     right: 0;
+}
 
+li {
+    font-size: smaller;
+}
+
+.projects-card {
+    width: 400px;
+
+    .card-body {
+        .list-group-flush {
+            height: 100px;
+        }
+
+        .lead-box {
+            height: 60px;
+            margin-top: 1rem;
+
+            .lead {
+                font-size: 1rem;
+                font-weight: 400;
+                line-height: 1.5;
+                margin-bottom: 1.5rem;
+            }
+        }
+    }
+}
+
+@keyframes galaxySpinning {
+
+    0% {
+        transform: scale(1) rotateZ(0deg);
+    }
+
+    50% {
+        transform: scale(1.2) rotateZ(20deg);
+    }
+
+    100% {
+        transform: scale(1) rotateZ(0deg);
+    }
 }
