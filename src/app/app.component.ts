@@ -36,7 +36,7 @@ export class AppComponent implements OnInit {
       'February-2022',
       'A clone of the Press web page of AirBnb using Bootstrap 4, HTML and CSS.',
       ['Focusing on responsiveness using Bootstrap 4.', 'Complementary styling with CSS.', 'Structured with HTML.'],
-      '../assets/img/apple_clojne.png',
+      '../assets/img/airbnb_press_clone.png',
       'https://brave-kowalevski-d81e58.netlify.app/'
     ),
     new Project(
