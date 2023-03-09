@@ -1,3 +1,7 @@
+.body {
+    background-color: black;
+}
+
 .profile-picture {
     width: 20%;
     object-fit: cover;
@@ -9,10 +13,6 @@
 .profile-picture:hover{
     transform: rotate3d(0, 10, 1, 15deg);
 }
-
-
-
-
 
 .component-details {
     font-size: 1.2rem;
@@ -101,6 +101,10 @@ li {
             }
         }
     }
+}
+
+::ng-deep .mat-tab-body-content {
+    overflow: hidden !important;
 }
 
 @keyframes galaxySpinning {
