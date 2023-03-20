@@ -29,10 +29,18 @@ export class AppComponent implements OnInit {
     new Project(
       'Map system Angular and MapboxGL', 
       'February-2023', 
-      'A Map system using Angular, Ngrx(Redux for Angular) and MapboxGL, the user can filter between favorite and non-favorite locations, and can also see the details of a specific property.',
+      'A Map system using Angular, Ngrx and MapboxGL, filter by favorite and see property details',
       ['Componentes created with Angular material', 'Pure JS map library', 'Angular as frontend Framework'],
       '../assets/img/map-system.png',
       'https://wonderful-bienenstitch-8b69ce.netlify.app/'
+      ),
+      new Project(
+        'Netflix Clone',
+        'October-2021',
+        'Netflix home clone, using React',
+        ['Website content fed by an API brought by the Axios library.','Component based.', 'Complementary styling with CSS.', 'Structured with HTML.', 'Deployed with Firebase'],
+        '../assets/img/netflix_clone.png',
+        'https://netflix-clone-f415f.web.app/'
       ),
     new Project(
       'Airbnb Online Exp. Clone', 
@@ -73,15 +81,7 @@ export class AppComponent implements OnInit {
       ['Focusing on responsiveness using Bootstrap 3.6.', 'Complementary styling with CSS.', 'Structured with HTML.'],
       '../assets/img/newsweek_clone.png',
       'https://tender-haibt-f3565e.netlify.app/'
-    ),
-    new Project(
-      'Netflix Clone',
-      'October-2021',
-      'Netflix home clone, using React',
-      ['Website content fed by an API brought by the Axios library.','Component based.', 'Complementary styling with CSS.', 'Structured with HTML.', 'Deployed with Firebase'],
-      '../assets/img/netflix_clone.png',
-      'https://netflix-clone-f415f.web.app/'
-    ),
+    )
   ]
 
   professionalExperience: ProfessionalExperience[] = [
@@ -109,6 +109,7 @@ export class AppComponent implements OnInit {
       'Present',
       `I'm currently the Front-end Leader on Smartgreen, a smart city company that provides the means to control public illumination through an IOT web system. My role is to architect and develop the new IOT System, maintain the current system, manage the git repository, teach the front-end team Angular good practices, and assign tasks. The team is currently composed of 4 developers.`,
       ['Angular', 'TypeScript', 'GraphQL', 'HTML', 'CSS', 'Insomnia', 'Figma', 'Git'],
+      `After 9 months developing, we launched the new IOT System, which is a complete rewrite of the old system, using Angular, GraphQL and a new UI/UX. The customer is testing it and the team is working on the feedbacks that are being reported. I'm now searching for new challenges and studying a lot to start my international career!`
     )
   ]
 }

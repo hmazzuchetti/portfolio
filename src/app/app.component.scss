@@ -84,13 +84,17 @@ li {
 .projects-card {
     width: 400px;
 
+    .card-title{
+        height: 70px;
+    }
+
     .card-body {
         .list-group-flush {
             height: 100px;
         }
 
         .lead-box {
-            height: 60px;
+            height: 85px;
             margin-top: 1rem;
 
             .lead {
