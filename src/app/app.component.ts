@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute, ParamMap } from '@angular/router';
+import { TranslateService } from '@ngx-translate/core';
 import { ProfessionalExperience } from './models/professional-exp.model';
 import { Project } from './models/projects.model';
 
@@ -11,6 +13,13 @@ import { Project } from './models/projects.model';
 export class AppComponent implements OnInit {
 
   ngOnInit(): void {
+    
+  }
+
+  constructor(
+    private translate: TranslateService) {
+    this.translate.setDefaultLang('en');
+    this.translate.use('en');
   }
 
   title = 'portfolio-angular';
