@@ -27,6 +27,14 @@ export class AppComponent implements OnInit {
   myAge : number = (this.today - 1997);
   projectList : Project [] = [
     new Project(
+      'Map system Angular and MapboxGL', 
+      'February-2023', 
+      'A Map system using Angular, Ngrx(Redux for Angular) and MapboxGL, the user can filter between favorite and non-favorite locations, and can also see the details of a specific property.',
+      ['Componentes created with Angular material', 'Pure JS map library', 'Angular as frontend Framework'],
+      '../assets/img/map-system.png',
+      'https://wonderful-bienenstitch-8b69ce.netlify.app/'
+      ),
+    new Project(
       'Airbnb Online Exp. Clone', 
       'February-2022', 
       'A clone of the Online Experience web page of AirBnb using Bootstrap 5, HTML and CSS.',
