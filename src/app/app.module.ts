@@ -10,11 +10,13 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {TranslateLoader, TranslateModule} from '@ngx-translate/core';
 import {TranslateHttpLoader} from '@ngx-translate/http-loader';
 import {HttpClient, HttpClientModule} from '@angular/common/http';
+import { GameComponent } from './components/game/game.component';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    GameComponent
   ],
   imports: [
     BrowserModule,
